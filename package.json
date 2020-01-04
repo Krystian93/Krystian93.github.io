@@ -1,0 +1,23 @@
+{
+  "name": "Krystian93.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krystian93/Krystian93.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krystian93/Krystian93.github.io/issues"
+  },
+  "homepage": "https://github.com/Krystian93/Krystian93.github.io#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
