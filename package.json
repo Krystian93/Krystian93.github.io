@@ -1,5 +1,5 @@
 {
-  "name": "krystian93.github.io",
+  "name": "Krystian93.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Krystian93/Krystian93.github.io.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
