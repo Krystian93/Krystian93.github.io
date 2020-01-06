@@ -54,6 +54,7 @@
       font-size: 17px; } }
   .popup__close {
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
     padding: .2rem .8rem;
@@ -157,8 +158,7 @@ body {
     position: relative;
     padding: 0.2rem 2.5rem;
     max-width: 640px;
-    margin: 0 auto;
-    line-height: 180%; }
+    margin: 50px auto; }
     .main-content .about p {
       font-size: 1.7rem; }
     @media (min-width: 640px) {
@@ -182,72 +182,6 @@ body {
       width: 40%;
       height: 0.2rem;
       background-color: #575C5F; }
-    .main-content .about .cat {
-      position: absolute;
-      z-index: 1;
-      bottom: -50%;
-      right: -12%;
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      width: 20%; }
-      .main-content .about .cat #right-eye-yellow {
-        fill: aliceblue; }
-      .main-content .about .cat #left-eye-yellow {
-        fill: aliceblue; }
-      .main-content .about .cat #tail {
-        -webkit-transform-origin: top right;
-        transform-origin: top right;
-        -webkit-transform: translate(10%, -10%) rotate(5deg);
-        transform: translate(10%, -10%) rotate(5deg);
-        -webkit-animation: tailRotate 4s infinite linear;
-        animation: tailRotate 4s infinite linear;
-        animation-direction: alternate-reverse; }
-
-@-webkit-keyframes tailRotate {
-  0% {
-    -webkit-transform: translate(21%, -2%) rotate(5deg);
-    transform: translate(21%, -2%) rotate(5deg); }
-  100% {
-    -webkit-transform: translate(9%, -11%) rotate(-6deg);
-    transform: translate(9%, -11%) rotate(-6deg); } }
-
-@keyframes tailRotate {
-  0% {
-    -webkit-transform: translate(21%, -2%) rotate(5deg);
-    transform: translate(21%, -2%) rotate(5deg); }
-  100% {
-    -webkit-transform: translate(9%, -11%) rotate(-6deg);
-    transform: translate(9%, -11%) rotate(-6deg); } }
-      @media (max-width: 700px) {
-        .main-content .about .cat {
-          left: 80%;
-          bottom: -60%; } }
-      @media (max-width: 600px) {
-        .main-content .about .cat {
-          left: 80%;
-          bottom: -52%; } }
-      @media (max-width: 500px) {
-        .main-content .about .cat {
-          left: 80%;
-          bottom: -36%; } }
-      @media (max-width: 400px) {
-        .main-content .about .cat {
-          left: 80%;
-          bottom: -25%; } }
-      @media (min-width: 959px) {
-        .main-content .about .cat {
-          z-index: 1;
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-          left: 0;
-          bottom: -72%; } }
-      @media (min-width: 960px) {
-        .main-content .about .cat {
-          z-index: 1;
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-          left: -20%;
-          bottom: -40%; } }
   .main-content .projects h2 {
     text-align: center; }
   @media (min-width: 640px) {
@@ -388,3 +322,40 @@ body {
 .footer {
   margin-top: 50px;
   text-align: center; }
+
+.cat {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 53%;
+  -webkit-transform: translateY(-80%);
+  transform: translateY(-80%); }
+  .cat #right-eye-yellow {
+    fill: aliceblue; }
+  .cat #left-eye-yellow {
+    fill: aliceblue; }
+  .cat #tail {
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -webkit-transform: translate(10%, -10%) rotate(5deg);
+    transform: translate(10%, -10%) rotate(5deg);
+    -webkit-animation: tailRotate 4s infinite linear;
+    animation: tailRotate 4s infinite linear;
+    animation-direction: alternate-reverse; }
+
+@-webkit-keyframes tailRotate {
+  0% {
+    -webkit-transform: translate(21%, -2%) rotate(5deg);
+    transform: translate(21%, -2%) rotate(5deg); }
+  100% {
+    -webkit-transform: translate(9%, -11%) rotate(-6deg);
+    transform: translate(9%, -11%) rotate(-6deg); } }
+
+@keyframes tailRotate {
+  0% {
+    -webkit-transform: translate(21%, -2%) rotate(5deg);
+    transform: translate(21%, -2%) rotate(5deg); }
+  100% {
+    -webkit-transform: translate(9%, -11%) rotate(-6deg);
+    transform: translate(9%, -11%) rotate(-6deg); } }
