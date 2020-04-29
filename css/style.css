@@ -14,7 +14,11 @@
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-.bold {
+
+::selection{
+  background-color: rgba(0, 0, 0, 0.596);
+}
+    .bold {
   font-weight: 700; }
 
 .my-1 {
